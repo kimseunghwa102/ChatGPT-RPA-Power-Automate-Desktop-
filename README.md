@@ -1,12 +1,12 @@
 ### chatgpt_rpa
-//Power Automate Desktop에서 ChatGPT의 The chat completion object를 사용하는 방법입니다. 
-//Power Automate Desktop의 프로세스를 내보낼 때 사용되는 확장자는 .pad
+Power Automate Desktop에서 ChatGPT의 The chat completion object를 사용하는 방법입니다. 
+Power Automate Desktop의 프로세스를 내보낼 때 사용되는 확장자는 .pad
+주석 처리는 // 을 사용합니다. 
 
 ## ChatGPT에게 명령할 프롬프르를 INPUT으로 작성합니다.
 Display.InputDialog Title: $'''CahtGPT''' Message: $'''질문을 주세요! ''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput
 
-##  rompt에 INPUT값을 Post방식으로 요청합니다. 
-##  Autorization에는 ChatGPT API KEY값을 입력합니다. 
+##  Prompt에 INPUT값을 Post방식으로 요청합니다. (Autorization에는 ChatGPT API KEY값을 입력합니다.)
 Web.InvokeWebService.InvokeWebService Url: $'''https://api.openai.com/v1/completions''' Method: Web.Method.Post Accept: $'''application/json''' ContentType: $'''application/json''' CustomHeaders: $'''Authorization: ''' RequestBody: $'''{
     \"model\": \"gpt-3.5-turbo-instruct\",
     \"prompt\": \"%UserInput%\",
