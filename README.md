@@ -2,6 +2,7 @@
 Power Automate Desktop에서 ChatGPT의 The chat completion object를 사용하는 방법입니다. 
 Power Automate Desktop의 프로세스를 내보낼 때 사용되는 확장자는 .pad
 주석 처리는 // 을 사용합니다. 
+해당코드의 사용 방법은 아래 코드를 복사하여 붙어넣어주세요.
 
 ## ChatGPT에게 명령할 프롬프르를 INPUT으로 작성합니다.
 Display.InputDialog Title: $'''CahtGPT''' Message: $'''질문을 주세요! ''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput
