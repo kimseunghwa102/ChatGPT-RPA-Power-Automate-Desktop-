@@ -1,4 +1,4 @@
-# chatgpt_rpa
+# ChatGPT+RPA(Power Automate Desktop)
 Power Automate Desktop에서 ChatGPT의 The chat completion object를 사용하는 방법입니다. 
 Power Automate Desktop의 프로세스를 내보낼 때 사용되는 확장자는 .pad
 주석 처리는 // 을 사용합니다. 
